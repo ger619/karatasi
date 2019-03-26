@@ -32,12 +32,15 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'karatasi.apps.KaratasiConfig',
+    'users.apps.UsersConfig',
+#    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -119,3 +122,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
+
+#CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'karatasi-home'
+
+LOGIN_URL = 'login'
