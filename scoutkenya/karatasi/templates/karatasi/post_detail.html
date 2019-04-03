@@ -5,7 +5,7 @@
         <img class = 'rounded-square article-img'src="{{ object.name.profile.image.url }}" alt="">
         <div class="media-body">
           <div class="article-metadata">
-            <a class="mr-2" href="#">{{ object.name}} </a>
+            <a class="mr-2" href="{% url 'user-posts' object.name.username %}">{{ object.player_name}} </a>
             <small class="text-muted">{{object.date_posted|date:" F d, Y"}}</small>
             {% if object.name == user %}
               <a class="btn btn-secondary btn-sm mt-1 mb-2" href="{% url 'post-update' object.id %}">Update</a>

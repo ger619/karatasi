@@ -7,13 +7,7 @@ from PIL import Image
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete = models.CASCADE)
     image = models.ImageField(default = 'default.jpg' , upload_to ='profile_pics')
-    county = models.CharField(default = '', max_length=100)
-    school = models.CharField(default = '', max_length=100)
-    sport = models.CharField(default = '', max_length=100)
-    height = models.CharField(default = '', max_length=100)
-    weight = models.CharField(default = '', max_length=100)
-    speed = models.CharField(default = '', max_length=100)
-    age = models.CharField(default = '', max_length=100)
+    
 
     def __str__(self):
         return f'{self.user.username} Profile'

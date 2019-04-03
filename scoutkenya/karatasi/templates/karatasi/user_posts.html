@@ -1,5 +1,6 @@
 {% extends "karatasi/base.html"%}
 {% block content %}
+<h1 class = 'mb-3'> Players added by {{view.kwargs.username }} ({{ page_obj.paginator.count }}) </h1>
     {% for post in posts %}
       <article class="media content-section">
 
@@ -14,7 +15,7 @@
               <h2><a class="article-title" href=" {% url 'post-detail' post.id %}" >{{post.position}}</a></h2>
               <p class="article-content">{{post.comment}}</p>
             </div>
-         
+
 
       </article>
 
