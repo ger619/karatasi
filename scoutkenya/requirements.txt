@@ -6,3 +6,6 @@ pytz==2018.5
 sqlparse==0.2.4
 django-crispy-forms==1.7.2
 Pillow==6.1.0
+gunicorn==19.9.0
+django-heroku==0.3.1
+django-allauth==0.40.0
