@@ -1,1 +1,1 @@
-web: gunicorn scoutkenya.wsgi 
+web: gunicorn karatasi.wsgi
