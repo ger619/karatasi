@@ -1,1 +1,1 @@
-web: gunicorn scoutkenya.wsgi --log-file -
+web: gunicorn scoutkenya.wsgi 
