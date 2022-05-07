@@ -1,2 +1,2 @@
-# karatasi
-This is a talent data collection app
+# Karatasi
+This is a talent data collection app1
